@@ -1,19 +1,18 @@
 <?php
 session_start();
-$db = mysql_connect("localhost","faber","uGNeQMC935");
-mysql_select_db("faber") or die("Не могу подключиться к базе.");
-
+require_once ("config.php");
 if (isset($_POST['login']) && isset($_POST['password']))
 {
     $login = mysql_real_escape_string($_POST['login']);
     $password = md5($_POST['password']);
+
 
     // делаем запрос к БД
     // и ищем юзера с таким логином и паролем
 
     $query = "SELECT `id`
             FROM `users`
-            WHERE `login`='{$login}' AND `password`='{$password}'
+            WHERE `name`='{$login}' AND `password`='{$password}'
             LIMIT 1";
        
 	$sql = mysql_query($query) or die(mysql_error());
