@@ -1,0 +1,31 @@
+body {
+	font-family: Courier;
+	}
+a.amenu {
+	color: #000;
+	font-family: "Myriad Pro", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    text-decoration: none;
+	letter-spacing: 0em;
+	
+}
+a.amenu:hover {
+	color: #000;
+	text-shadow: 0 1px 1px #000;
+}
+input[type="submit"] {
+	color: #524f4f;
+	font-family: "Myriad Pro", Helvetica, Arial, sans-serif;
+	text-shadow: 0 1px 0px #fff;
+}
+p.contacts {
+	font-style: italic;
+	text-decoration: underline;
+	}
+p.noterror {
+	font-size: 12px;	
+	}
+h3 {
+	color: #767373;
+	padding: 5px;
+	}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Alaskan" />
+<meta name="description" content="Alaskan dog" />
+<meta name="author" content="Maks Utah" />
+<meta name="robots" content="all" />
+<link rel="stylesheet" media="screen" type="text/css" title="Style" href="css/style.css">
+<title>Alaskan</title>
+</head>
+<?php
+Error_Reporting(E_ALL & ~E_NOTICE);
+require_once ("config.php");
+?>
+<body>
+	<div id=content>
+<div id=menu>
+	<div class=menu>
+		<a title="Foto1" href="#foto1">Фото 1</a>
+	</div>
+	<div class=menu>
+		<a title="Foto2" href="#foto1">Фото 2</a>
+	</div>
+	<div class=menu>
+		<a title="Foto3" href="#foto1">Фото 3</a>
+	</div>
+<div id=upload class=menu>
+<form enctype="multipart/form-data" action="upload.php" method="post">
+<input type="hidden" name="MAX_FILE_SIZE" value="10000000">
+<input name="userfile" type="file">
+<input type="submit" value="Загрузить файл">
+</form>
+</div>
+<?php
+if ($_GET['error'] == 1)
+{
+?>
+<div class=menu>
+		Неверный фомат файла или превышен размер
+	</div>
+<?php
+}
+else { 
+?>
+	<div class=menu>
+		</div>
+<?php 
+} 
+?>
+	<div id=contacts class=menu>
+		Наши контакты:
+	</div>
+	
+</div>
+<?php
+include ("blocks/photo.php");
+?>
+</div>
+</div>	
+</body>
+</html>

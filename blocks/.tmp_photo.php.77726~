@@ -1,0 +1,27 @@
+<div id=photo>
+	<ul>
+	 
+<?php
+$result = mysql_query("SELECT * FROM photo",$dbcnx);
+$myrow = mysql_fetch_array($result);
+$num_rows = mysql_num_rows($result);
+do {
+?>
+
+		<li>
+	 	      <img src="uploads/<?php echo $myrow['name']; ?>" />
+	 	      <br />
+	 	      <?php echo $myrow['comment']; ?>
+			  <?php
+			if  ($num_rows == 0) {
+			echo "Нет фоток";
+			}
+ else {?> <a title="Delete" href="blocks/delete.php?name=<?php echo $myrow['name']; ?>">Удалить</a>
+ <?php } ?>
+		</li>
+		
+<?php } 
+while ($myrow = mysql_fetch_array($result));
+?>
+</ul>
+</div>	 

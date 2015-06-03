@@ -1,0 +1,108 @@
+@import url('reset.css'); 
+@import url('typography.css');
+body {
+    background: #f3f3f3;
+	}
+div#content {
+	padding: 10px;
+	margin: auto;
+	height: 700px;
+	width: 1000px;
+	background: #fff;
+	box-shadow: 2px 1px 3px #656363;
+}	
+	
+div#menu {
+	background: url("../img/menu.png") no-repeat;
+	height: 700px;
+	width: 260px;
+	float: left;
+	
+	
+}
+div.menu {
+	background: #fff;
+	height: 23px;
+	width: 240px;
+	margin: 10px;
+	text-align: center;
+	border-radius:6px;
+	padding-top:4px;
+	opacity:0.6;
+}	
+div#contacts {
+	position: relative;
+	margin-top: 282px;
+	height: 165px;
+	}
+div#upload {
+	padding-top:10px;
+	height: 95px;
+}
+div#photo {
+	position: absolute;
+	margin-left: 270px;
+	width: 730px;
+	height: 700px;
+	background: #e8e8f5;
+}
+div#albums {
+	height: 280px;
+	background: #e8e8f5;
+	border-bottom: inset;
+}
+
+li.album {
+	background: #fff;
+	width: 99px;
+	height: 99px;
+	margin: 10px;
+	float: left;
+}
+li.album img {
+	opacity:0.4;
+	border: 1 #fff;
+}
+
+li.selected img {
+	box-shadow: 0 0 2px #000000;
+	opacity:1;
+}
+ul {
+	padding-left: 10px;
+}
+
+.btnlogin {
+	-moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ededed), color-stop(1, #dfdfdf) );
+	background:-moz-linear-gradient( center top, #ededed 5%, #dfdfdf 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#dfdfdf');
+	background-color:#ededed;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	border:1px solid #dcdcdc;
+	display:inline-block;
+	color:#000;
+	font-family:arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:1px 1px 0px #ffffff;
+}.btnlogin:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #dfdfdf), color-stop(1, #ededed) );
+	background:-moz-linear-gradient( center top, #dfdfdf 5%, #ededed 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#dfdfdf', endColorstr='#ededed');
+	background-color:#dfdfdf;
+}.btnlogin:active {
+	position:relative;
+	top:1px;
+}
+
+/*li img {
+	border: 0; padding: 2px; 
+	border: 1px groove #767373;
+}*/

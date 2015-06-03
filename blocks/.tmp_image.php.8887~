@@ -1,0 +1,6 @@
+<?php
+header('Content-type: image/jpeg');
+$image = new Imagick('uploads/'.$myrow['name'].'');
+$image->thumbnailImage(100, 0);
+echo $image;
+?>
