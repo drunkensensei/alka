@@ -1,6 +1,6 @@
 <?php
 require_once ("config.php");
-$uploaddir = '/tmp/';
+$uploaddir = 'tmp/';
 $uploadfile = '/var/www/html/alaskan/uploads/' . basename($_FILES['userfile']['tmp_name']);
 $filename = basename($_FILES['userfile']['tmp_name']);
 echo $filename;
