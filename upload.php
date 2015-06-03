@@ -5,7 +5,7 @@ $uploaddir = 'C:\Windows\Temp';
 $uploadfile = 'D:/www/alyaska/uploads/' . basename($_FILES['userfile']['tmp_name']);
 $filename = basename($_FILES['userfile']['tmp_name']);
 print_r($filename);
-echo $uploadfile;
+print_r($uploadfile);
 echo '<pre>';
 if ($_FILES['userfile']['type'] !== "image/jpeg") {header("Location: index.php?error=1"); exit();}
 if (move_uploaded_file($_FILES['userfile']['tmp_name'], $uploadfile)) {
@@ -26,7 +26,7 @@ print_r($_FILES);
 
 print "</pre>";
 //header('Content-type: image/jpeg');
-$image = new Imagick("$uploadfile");
+$image = new Imagick($uploadfile);
 $image->thumbnailImage(0,80);
 $image->writeImage("uploads/preview/$filename");
 //include (blocks/image_convert.php);
