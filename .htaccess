@@ -1,1 +1,1 @@
-php_admin_value upload_tmp_dir /var/www/html/alaskan/uploads
+#php_admin_value upload_tmp_dir /var/www/html/alaskan/uploads

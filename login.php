@@ -1,7 +1,7 @@
 <?php
 session_start();
-$db = mysql_connect("localhost","saitest","sas");
-mysql_select_db("saitest") or die("Не могу подключиться к базе.");
+$db = mysql_connect("localhost","faber","uGNeQMC935");
+mysql_select_db("faber") or die("Не могу подключиться к базе.");
 
 if (isset($_POST['login']) && isset($_POST['password']))
 {
